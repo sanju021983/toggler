@@ -1,17 +1,23 @@
 <template>
     <form>
+        {{ name }} - {{heroName}}
         <div>
-            <input type="text"/>
+            <input type="text" :value="inputLine"/>
         </div>
     </form>
 </template>
-<script lang="ts">
+<script>
 import {Options, Vue} from "vue-class-component";
-export default class Timer extends Vue{
+export default{
+    name:"Timer",
+    props: ['name','heroName'],
     data(){
         return {
-            inputLine: ""
+            inputLine: "sadfa"
         }
+    },
+    methods:{
+
     }
 }
 </script>
