@@ -1,6 +1,32 @@
 {
   "dependencies": {
+    "concurrently": "^7.5.0",
+    "express": "^4.18.2",
     "lodash": "^4.17.21",
     "vue": "^3.2.36"
-  }
+  },
+  "name": "vue-laravel-todo",
+  "version": "1.0.0",
+  "description": "Vue Frontend Laravel Backend",
+  "main": "index.js",
+  "scripts": {
+      "start": "concurrently 'cd client && npm run serve' 'cd backend && php artisan serve'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanju021983/toggler.git"
+  },
+  "keywords": [
+    "Vue",
+    "PHP",
+    "Laravel",
+    "RestAPI"
+  ],
+  "author": "Sanju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanju021983/toggler/issues"
+  },
+  "homepage": "https://github.com/sanju021983/toggler#readme"
 }
